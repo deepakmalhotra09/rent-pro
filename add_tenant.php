@@ -92,7 +92,7 @@ if(!$tenant_id){
 									<br />
                   <?php if($add_tenant){ ?>
 									<form id="" data-parsley-validate class="form-horizontal form-label-left"
-                  action="<?= $tenant_id ? 'submit.php?type=update' : 'submit.php?type=add_tenant' ?>" method="post">
+                  action="<?= $tenant_id ? 'submit.php?type=update_tenant' : 'submit.php?type=add_tenant' ?>" method="post">
                     <input type="hidden" value="<?= $tenant->id ?>" name="tenant_id" />
 										<div class="item form-group">
 											<label class="col-form-label col-md-3 col-sm-3 label-align" for="property-name">Property Name
