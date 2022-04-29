@@ -134,8 +134,6 @@ if($_REQUEST['type'] == 'add_tenant'){
 
 if($_REQUEST['type'] == 'update_tenant'){
     try {
-
-        
       $user_id = $_SESSION['id'];
       $property_id = $_REQUEST['property_id'];
       $tenant_id = $_REQUEST['tenant_id'];
