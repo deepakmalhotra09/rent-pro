@@ -1,7 +1,11 @@
+<?php
+$year = date("Y");
+?>
+
 <footer>
   <div class="pull-right">
     <div>
-      <p>© RentBuzz! 2021 All Rights Reserved</p>
+      <p>© WhatsRent! <?= $year ?> All Rights Reserved</p>
     </div>
   </div>
   <div class="clearfix"></div>

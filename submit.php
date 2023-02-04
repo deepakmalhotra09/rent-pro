@@ -174,6 +174,27 @@ if($_REQUEST['type'] == 'add_property'){
     }
 }
 
+if($_REQUEST['type'] == 'update_property'){
+    try {
+      echo "<pre>";
+      $user_id = $_SESSION['id'];
+      $p_id = $_REQUEST['p_id'];
+      $property_name = $_REQUEST['property_name'];
+      $address_1 = $_REQUEST['address_1'];
+      $address_2 = $_REQUEST['address_2'];
+      $city_name = $_REQUEST['city'];
+      $state_id = $_REQUEST['state'];
+      $sql_i = "UPDATE rentre_property SET name = '$property_name', address_1 = '$address_1', address_2 = '$address_2', city_name='$city_name', state_id= '$state_id' WHERE user_id= '$user_id' AND id = '$p_id'";
+        if ($conn->query($sql_i) === TRUE) {
+            header('Location: /properties.php');
+        } else {
+            header('Location: /add_tenant.php?p_id='.$property_id.'&error=2');
+        }
+    } catch (\Exception $e) {
+      header('Location: /add_property.php?error=3');
+    }
+}
+
 if($_REQUEST['type'] == 'forgot'){
     $username = $_REQUEST['username'];
     $return_url = strtok($_SERVER["HTTP_REFERER"], '?');

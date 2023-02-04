@@ -62,7 +62,7 @@ $state_result = $conn->query($sql);
 						<div class="col-md-12 col-sm-12 ">
 							<div class="x_panel">
 								<div class="x_title">
-									<h2>Add property
+									<h2>Update property
                     <!-- <small>different form elements</small> -->
                   </h2>
 									<ul class="nav navbar-right panel_toolbox">
@@ -76,7 +76,8 @@ $state_result = $conn->query($sql);
 								<div class="x_content">
 									<br />
 									<form id="" data-parsley-validate class="form-horizontal form-label-left"
-                  action="submit.php?type=add_property" method="post">
+                  action="submit.php?type=update_property" method="post">
+                  <input name="p_id" value="<?= $property_id; ?>" type="hidden" id="p_id">
 										<div class="item form-group">
 											<label class="col-form-label col-md-3 col-sm-3 label-align" for="property-name">Property Name <span class="required">*</span>
 											</label>
@@ -111,7 +112,7 @@ $state_result = $conn->query($sql);
 										<div class="ln_solid"></div>
 										<div class="item form-group">
 											<div class="col-md-6 col-sm-6 offset-md-3">
-                        <button type="submit" class="btn btn-success">Add Property</button>
+                        <button type="submit" class="btn btn-success">Update</button>
 												<a class="btn btn-default" href="/">Cancel</a>
                         <?php if(isset($_REQUEST['error'])){ ?>
                         <code class="txt-danger">Please Try Again</code>
