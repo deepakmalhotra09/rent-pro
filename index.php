@@ -90,6 +90,7 @@ $total_r_i = $r_i ? $r_i->total_r_i : 0;
 									<div class="clearfix"></div>
 								</div>
                 <div class="x_content">
+                
                   <div class="row">
                     <div class="animated flipInY col-lg-3 col-md-3 col-sm-6  ">
                       <div class="tile-stats">

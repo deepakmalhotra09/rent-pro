@@ -134,19 +134,17 @@ if($_REQUEST['type'] == 'add_tenant'){
 
 if($_REQUEST['type'] == 'update_tenant'){
     try {
-      die;
       $user_id = $_SESSION['id'];
       $property_id = $_REQUEST['property_id'];
+      $tenant_id = $_REQUEST['tenant_id'];
       $name = $_REQUEST['tenant_name'];
       $portion = $_REQUEST['tenant_portion'];
       $aadhar_no = $_REQUEST['aadhar'];
       $amount = $_REQUEST['amount'];
       $start_date = $_REQUEST['start_date'];
-      $sql_i = "UPDATE rentre_tenants SET name='$name', bank_details = '$bd', pan_no = '$pan_no' WHERE user_id= '$user_id'";
-      $sql_i = "INSERT INTO rentre_tenants (user_id, property_id, portion, name, aadhar_no, amount, start_date) VALUES
-      ('$user_id', '$property_id', '$portion', '$name', '$aadhar_no', '$amount', '$start_date');";
+      $sql_i = "UPDATE rentre_tenants SET portion='$portion', name = '$name', aadhar_no = '$aadhar_no', amount = '$amount', start_date='$start_date' WHERE user_id= '$user_id' AND id = '$tenant_id'";
         if ($conn->query($sql_i) === TRUE) {
-            header('Location: /');
+            header('Location: /tenants.php');
         } else {
             header('Location: /add_tenant.php?p_id='.$property_id.'&error=2');
         }
