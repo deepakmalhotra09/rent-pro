@@ -46,7 +46,7 @@ $due_date = date('F j, Y', strtotime($current_date. ' + 5 days'));
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="/" class="site_title"> <span>RentBuzz!</span></a>
+              <a href="/" class="site_title"> <span>WhatsRent!</span></a>
             </div>
             <div class="clearfix"></div>
             <br />

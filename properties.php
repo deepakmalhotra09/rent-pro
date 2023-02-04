@@ -17,7 +17,7 @@ $properties = $conn->query($sql);
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
               <!-- <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a> -->
-              <a href="/" class="site_title"> <span>RentBuzz!</span></a>
+              <a href="/" class="site_title"> <span>WhatsRent!</span></a>
             </div>
             <div class="clearfix"></div>
             <!-- menu profile quick info -->
@@ -94,7 +94,7 @@ $properties = $conn->query($sql);
                                 <td><?= $row['city_name']; ?></td>
                                 <td><?= $row['state_name']; ?></td>
                                 <td>
-                                  <a href="/add_property.php?p_id=<?= $row['id']; ?>">Edit</a> /
+                                  <a href="/update_property.php?p_id=<?= $row['id']; ?>">Edit</a> /
                                   <a href="/add_tenant.php?p_id=<?= $row['id']; ?>">Add Tenant</a> /
                                   <a href="/tenants.php?p_id=<?= $row['id']; ?>">View Tenant</a> /
                                   <a href="/my_invoices.php?p_id=<?= $row['id']; ?>">Check Invoices</a> /

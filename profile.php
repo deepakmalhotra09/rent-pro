@@ -26,7 +26,7 @@ if ($user->bank_details){
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="/" class="site_title"> <span>RentBuzz!</span></a>
+              <a href="/" class="site_title"> <span>WhatsRent!</span></a>
               <!-- <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a> -->
             </div>
             <div class="clearfix"></div>

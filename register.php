@@ -46,8 +46,8 @@ if(isset($_SESSION['username'])){
                 <br />
 
                 <div>
-                  <h1> RentBuzz!</h1>
-                  <p>©2021 All Rights Reserved. RentBuzz</p>
+                  <h1> WhatsRent!</h1>
+                  <p>©2021 All Rights Reserved. WhatsRent</p>
                 </div>
               </div>
             </form>
